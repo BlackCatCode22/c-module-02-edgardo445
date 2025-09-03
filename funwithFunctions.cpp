@@ -23,6 +23,14 @@ int getAnIntFromTheUser(string userName) {
     return anIntFromTheUser;
 }
 
+
+int name (int num1, int num2) {
+return num1 + num2;
+
+
+
+}
+
 int main() {
     cout << "\n...Welcome to my awesome Fun With Functions program!..\n";
 
@@ -40,6 +48,19 @@ int main() {
     // Call (invoke) the function named getAnIntFromTheUser() with a string argument
     aRandomNumber = getAnIntFromTheUser(userName);
     cout << "\n\n" + userName + " entered: " << aRandomNumber << endl;
+
+
+    // AddTwoInts
+    // Initialize all my variables.
+     int num1;
+     int num2;
+    cout << "\n Please enter a value for num1: ";
+    cin >> num1;
+    cout << "\n Your entered " << num1 <<" for num1";
+    cin >> num2;
+
+    int sum = name(num1, num2);
+    cout << "the sum is: " << sum;
 
 
     return 0;
